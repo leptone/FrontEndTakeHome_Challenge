@@ -1,0 +1,84 @@
+body {
+  text-align: center; }
+
+.all-stations-container {
+  text-align: center;
+  display: inline-block; }
+  .all-stations-container > .thumbnail-container {
+    display: inline-block;
+    width: 20%;
+    margin: 0.7rem;
+    padding: 0.2rem;
+    border: 0.2rem solid #20b2fa;
+    border-radius: 0.7rem; }
+    .all-stations-container > .thumbnail-container > img {
+      display: block;
+      width: 100%;
+      border-radius: 0.3rem; }
+    .all-stations-container > .thumbnail-container > .tag-wrapper {
+      text-align: center;
+      margin-top: 0.5rem; }
+      .all-stations-container > .thumbnail-container > .tag-wrapper > .tag {
+        font-weight: bold;
+        margin: 0.2rem;
+        padding: 0px 0.7rem 0.08rem;
+        background-color: rgba(32, 178, 250, 0.8);
+        border-radius: 0.8rem;
+        color: white;
+        display: inline-block;
+        white-space: nowrap; }
+
+.detailed-station-container {
+  display: inline-block;
+  width: 80%;
+  margin-top: 2rem;
+  border: 0.3rem solid #20b2fa;
+  border-radius: 1rem; }
+  .detailed-station-container > img {
+    float: left;
+    width: 45%;
+    border-radius: 1rem;
+    padding: 0.3rem; }
+  .detailed-station-container > .text-container {
+    width: 50%;
+    display: inline-block;
+    text-align: center; }
+    .detailed-station-container > .text-container > h2 {
+      margin: 4.4rem 0 2rem;
+      font-size: 400%; }
+    .detailed-station-container > .text-container > .tag-wrapper {
+      margin-top: 5.1rem;
+      margin-bottom: 2rem; }
+      .detailed-station-container > .text-container > .tag-wrapper > .tag {
+        display: inline-block;
+        margin: 0px 0.5rem 0.8rem;
+        font-size: 200%;
+        font-weight: bold;
+        background-color: #20b2fa;
+        border-radius: 1.2rem;
+        padding: 0px 1rem 0.2rem;
+        white-space: nowrap;
+        color: white; }
+    .detailed-station-container > .text-container .popularity-container {
+      font-size: 200%;
+      display: inline-block;
+      margin-right: 0.7rem; }
+    .detailed-station-container > .text-container .reliability-container {
+      font-size: 200%;
+      display: inline-block; }
+    .detailed-station-container > .text-container .value {
+      font-weight: bold; }
+    .detailed-station-container > .text-container .label {
+      margin-right: 0.9rem; }
+
+.all-stations-btn {
+  display: inline-block;
+  width: 80%;
+  height: 7rem;
+  margin: 0.5rem 0 0.9rem;
+  border: 0.3rem solid #20b2fa;
+  border-radius: 3.5rem;
+  font-size: 500%;
+  background-color: #20b2fa;
+  color: white;
+  font-weight: bold; }

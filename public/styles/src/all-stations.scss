@@ -1,0 +1,36 @@
+.all-stations-container {
+    text-align: center;
+    display: inline-block;
+    & > .thumbnail-container {
+        display: inline-block;
+        width: 20%;
+        //height: 100%;
+        margin: 0.7rem;
+        padding: 0.2rem;
+        border: 0.2rem solid rgb(32, 178, 250);
+        border-radius: 0.7rem;
+
+        & > img {
+            display: block;
+            width: 100%;
+            border-radius: 0.3rem;
+        }
+
+        & > .tag-wrapper {
+            text-align: center;
+            margin-top: 0.5rem;
+
+            & > .tag {
+				font-weight: bold;
+				margin: 0.2rem;
+				padding: 0px 0.7rem 0.08rem;
+				background-color: rgba(32, 178, 250, 0.8);
+				border-radius: 0.8rem;
+				color: white;
+				display: inline-block;
+				white-space: nowrap;
+            
+            }
+        }
+    }
+}

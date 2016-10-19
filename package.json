@@ -4,12 +4,17 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node-sass public/styles/styles.scss -o public/styles",
+    "css-w": "node-sass public/styles/styles.scss -w -o public/styles",
+    "js": "browserify public/js/src/initialize.js > public/js/bundle.js",
+    "js-w": "watchify public/js/src/initialize.js -o public/js/bundle.js -dv",
+    "dev": "parallelshell 'npm run css-w' 'npm run watch'"
   },
   "dependencies": {
     "body-parser": "~1.0.1",
     "ejs": "^2.3.1",
-    "express": "~4.0.0",
+    "express": "^4.0.0",
     "hbs": "^3.1.1",
     "jade": "^1.11.0",
     "lodash": "^3.3.1",
@@ -19,11 +24,17 @@
     "q": "~1.0.x",
     "require-dir": "^0.1.0",
     "serve-favicon": "^2.0.1",
-    "stylus": "^0.47.2"
+    "stylus": "^0.47.2",
+    "virtual-dom": "^2.1.1",
+    "xhr": "^2.2.2"
   },
   "author": "sandersen",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.8.0"
+    "browserify": "^13.1.0",
+    "node-sass": "^3.10.1",
+    "nodemon": "^1.8.0",
+    "parallelshell": "^2.0.0",
+    "watchify": "^3.7.0"
   }
 }

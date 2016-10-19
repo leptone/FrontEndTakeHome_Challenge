@@ -1,0 +1,72 @@
+.detailed-station-container {
+    display: inline-block;
+    width: 80%;
+    margin-top: 2rem;
+    border: 0.3rem solid rgb(32, 178, 250);
+    border-radius: 1rem;
+
+	& > img {
+	    float: left;
+		width: 45%;
+		border-radius: 1rem;
+		padding: 0.3rem;
+
+	}
+    
+    & > .text-container {
+        width: 50%;
+        display: inline-block;
+        text-align: center;
+		& > h2 {
+			margin: 4.4rem 0 2rem;
+			font-size: 400%;
+		}
+
+		& > .tag-wrapper {
+			margin-top: 5.1rem;
+			margin-bottom: 2rem;
+			& > .tag {
+				display: inline-block;
+				margin: 0px 0.5rem 0.8rem;
+				font-size: 200%;
+				font-weight: bold;
+				background-color: rgb(32, 178, 250);
+				border-radius: 1.2rem;
+				padding: 0px 1rem 0.2rem;
+				white-space: nowrap;
+				color: white;
+			} 
+		}
+
+		& .popularity-container {
+		    font-size: 200%;
+			display: inline-block;
+			margin-right: 0.7rem;
+		}
+		& .reliability-container {
+		    font-size: 200%;
+			display: inline-block;
+		}
+		& .value {
+			font-weight: bold;
+		}
+        & .label {
+            margin-right: 0.9rem;
+        }
+    }
+
+}
+.all-stations-btn {
+
+    display: inline-block;
+    width: 80%;
+    height: 7rem;
+    margin: 0.5rem 0 0.9rem;
+    //padding: 1rem;
+    border: .3rem solid rgba(32,178,250, 1);
+    border-radius: 3.5rem;
+    font-size: 500%;
+    background-color: rgb(32,178,250);
+    color: white;
+    font-weight: bold;
+}
